@@ -16,6 +16,6 @@ spec:
         - name: ghcr-secret
       containers:
         - name: hello-demo
-          image: hello-demo:latest
+          image: ghcr.io/ehalilovic700/hello-demo:5bc729d805c2453812d094d1dafe28ddbfeb7589
           ports:
             - containerPort: 8080
