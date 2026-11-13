@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-demo
+  annotations:
+    backstage.io/source-location: url:https://github.com/ehalilovic700/hello-demo
+    github.com/project-slug: ehalilovic700/hello-demo
+    backstage.io/techdocs-ref: url:https://github.com/ehalilovic700/hello-demo/tree/main
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental

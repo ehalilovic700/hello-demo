@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-demo
+  template:
+    metadata:
+      labels:
+        app: hello-demo
+    spec:
+      imagePullSecrets:
+        - name: ghcr-secret
+      containers:
+        - name: hello-demo
+          image: hello-demo:latest
+          ports:
+            - containerPort: 8080
